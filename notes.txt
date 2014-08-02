@@ -1,1 +1,19 @@
+# Shell
+
+## 从nmap-services中获取高频端口
+
+```
 awk '$2 ~ /tcp/ {print $3, $2}' /usr/share/nmap/nmap-services | sort -snr
+```
+
+
+# 正则表达式
+
+## 匹配IP
+
+```
+^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$
+```
+
+# unity启动冻结问题解决办法
+dconf reset -f /org/compiz/
